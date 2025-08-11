@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+    background-color: #fff;
+    color: #000;
+    font-family: "Times New Roman", serif;
+  }
+  
+  a {
+    color: #d4af37;
+  }
+  
+  button:hover {
+    opacity: 0.9;
+  }
+  
