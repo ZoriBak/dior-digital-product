@@ -50,7 +50,7 @@ function Navbar() {
     // Each item becomes a clickable Link component
     ...['Home', 'New Product', 'QR Generate', 'QR Scan', 'Dashboard', 'Map'].map((text, idx) => (
       React.createElement(
-        Link,                                // React Router Link component for navigation
+        Link,                                
         {
           key: idx,                        
           to: getLinkPath(text),             
