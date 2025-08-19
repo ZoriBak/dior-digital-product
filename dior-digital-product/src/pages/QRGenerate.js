@@ -89,11 +89,11 @@ function QRGenerate() {
     
     // URL input field - user types the link they want to convert
     React.createElement('input', {
-      type: 'text',                            // Text input type
-      placeholder: 'Enter a URL here',         // Helpful placeholder text
-      value: link,                             // Controlled input value
-      onChange: e => setLink(e.target.value),  // Update link state when typing
-      style: inputStyle,                       // Apply input styling
+      type: 'text',                           
+      placeholder: 'Enter a URL here',         
+      value: link,                            
+      onChange: e => setLink(e.target.value), 
+      style: inputStyle,                       
     }),
     
     error && React.createElement('div', { style: errorStyle }, error),
@@ -109,12 +109,12 @@ function QRGenerate() {
     qrUrl && React.createElement(
       'a',                                    
       { 
-        href: link,                            // Link destination
-        target: '_blank',                      // Open in new tab
+        href: link,                            
+        target: '_blank',                
         rel: 'noreferrer',                    
         style: linkStyle                       
       },
-      link                                     // Display the actual URL text
+      link                                    
     )
   );
 }
